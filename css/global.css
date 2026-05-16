@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #ffffff;
+    --bg-color: #000000;
+    --accent-color: #e4e1e1;
+    --font-primary: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* nav */
+.navbar {
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 55px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.phone-number {
+    color: var(--primary-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+/* responsive of navbar */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        gap: 30px;
+    }
+    
+    .homepage {
+        padding-top: 70px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Mobile navigation - hidden by default */
+    .nav-links {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked ~ .nav-links {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+    
+    .phone-number {
+        display: none;
+    }
+    
+}

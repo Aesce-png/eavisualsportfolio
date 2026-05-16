@@ -1,0 +1,222 @@
+.bgimg {
+    background-image: url('../assets/BGY.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 5% 5%;
+    position: relative;
+}
+
+.socials {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.socials a {
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.intro {
+    color: var(--primary-color);
+}
+
+.intro h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 0.5;
+    margin-left: 4px;
+}
+
+.intro h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    margin: 0.2rem 0;
+}
+
+.intro h3 {
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-weight: 300;
+    letter-spacing: 3px;
+    opacity: 0.9;
+    margin-left: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    left: 0;
+}
+
+.btn:hover {
+    color: var(--bg-color);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* TABLET (768px and below)*/
+@media screen and (max-width: 768px) {
+    .socials {
+        position: fixed;       
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 15px;
+    }
+    
+    .socials a {
+        font-size: 1.8rem;
+    }
+    
+    .homepage {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px 120px;  
+    }
+    
+    .intro-content {
+        align-items: center;
+    }
+    
+    .intro h3 {
+        letter-spacing: 2px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media screen and (max-width: 480px) {
+    .socials a {
+        font-size: 1.5rem;
+    }
+    
+    .bgimg {
+        background-position: center center;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .intro h3 {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+
+/* VERY SMALL (320px and below)*/
+@media screen and (max-width: 320px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+    
+    .intro h3 {
+        font-size: 0.65rem;
+    }
+}
+
+/* LANDSCAPE MODE */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .homepage {
+        padding-top: 70px;
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+    
+    .socials {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 30px;
+    }
+}
+
+/* LARGE SCREENS (1920px and up)*/
+@media screen and (min-width: 1920px) {
+    .homepage {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
