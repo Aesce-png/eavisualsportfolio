@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA Visuals</title> 
+    <!-- Swiper CSS for project carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Main stylesheet that imports all partials -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- font icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ==================== navbar ==================== -->
+    <nav class="navbar">
+    <div class="nav-container">
+
+        <!-- Hidden checkbox for mobile hamburger toggle (CSS-only menu) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <div class="logo">
+            <a href="#home" target="_self">
+                <img src="../assets/ealogo.png" alt="EA Visuals Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about" target="_self">ABOUT</a></li>
+            <li><a href="#proj" target="_self">PROJECTS</a></li>
+            <li><a href="#contacts" target="_self">CONTACTS</a></li>
+        </ul>
+
+        <!-- Phone number - hidden on mobile -->
+        <div class="phone-number">
+            <i class="fa-solid fa-phone"></i> +63 992 7436 870
+        </div>
+
+        <!-- Hamburger icon (3 bars) -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+</nav>
+
+    <!-- ==================== HOME SECTION ==================== -->
+    <section class="bgimg" id="home">
+        <main class="homepage">
+            <div class="socials">
+                <a href="https://web.facebook.com/acieuuu" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/crvxace/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-viber"></i></a>
+                <a href="mailto:eugeneacepascual@gmail.com?subject=Hello&body=Message%20here"><i class="fa-solid fa-inbox"></i></a>
+                <a href="https://t.me/yujinnzxx"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+
+            <div class="intro-content">
+                <div class="intro">
+                    <h2>EUGENE ACE</h2>
+                    <h1>PASCUAL</h1>
+                    <h3>Photographer | Video Editor | Graphic Layout Artist | Programmer</h3>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn" type="button">RESUME</button>
+                    <button class="btn" type="button"><a href="#proj" target="_self">PROJECTS</a></button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="bgcolor" id="about">
+        <div class="about-bg-photo">
+            <img src="/assets/akotoh.png" alt="Eugene Ace Pascual">
+        </div>
+
+        <div class="paddingshitabout"> 
+            <div class="aboutm">
+                <div class="abouth">
+                    <h1>ABOUT</h1>
+                    <h4>eugeneacepascual@gmail.com</h4>
+                </div>  
+
+                <div class="aboutp">
+                    <p>Hello! I'm Eugene Ace Pascual, a creative professional based in the Philippines. With a passion for visual storytelling, I specialize in photography, video editing, graphic design, and programming.</p>
+                    <p>My journey began with a simple camera and a curiosity for capturing moments. Over the years, I've developed a diverse skill set that allows me to bring creative visions to life across multiple mediums.</p>
+                    <p>Whether it's capturing the perfect shot, editing footage that tells a compelling story, designing layouts that communicate effectively, or coding solutions that solve problems—I bring dedication and creativity to every project.</p>
+                </div>
+            </div>
+
+            <div class="add">
+                <div class="address">
+                    <h2>Tagaytay City, Philippines</h2>
+                    <p>PATUTONG MALAKI, GUINHAWA RD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects" id="proj">
+        <h3 class="sec-title">I Make Incredible<br></h3>
+        <h2 class="sec-titlesub">Projects</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- ===== CARD 1: Web Project ===== -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>01</h1>
+                            <h3>Web</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">The Capella<br>Website</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">HTML, CSS, JavaScript, React</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="Capella Website Project" class="projs-img">
+                            <!-- NOTE: Link is placeholder (#) -->
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ===== CARD 2: App Project ===== -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>02</h1>
+                            <h3>App</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">Mobile<br>Dashboard</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Flutter, Dart, Firebase</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="Mobile Dashboard Project" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ===== CARD 3: UI/UX Project ===== -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>03</h1>
+                            <h3>UI/UX</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">E-Commerce<br>Redesign</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Figma, Adobe XD, Prototyping</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="E-Commerce Redesign Project" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ===== CARD 4: API Project ===== -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>04</h1>
+                            <h3>API</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">REST API<br>Service</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Node.js, Express, MongoDB</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="REST API Service Project" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 
+                ================================================
+                DUPLICATE CARDS (Cards 1-4 repeated)
+                ================================================
+                -->
+
+                <!-- Duplicate Card 1 -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>01</h1>
+                            <h3>Web</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">The Capella<br>Website</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">HTML, CSS, JavaScript, React</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="proj1" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Duplicate Card 2 -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>02</h1>
+                            <h3>App</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">Mobile<br>Dashboard</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Flutter, Dart, Firebase</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="proj2" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Duplicate Card 3 -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>03</h1>
+                            <h3>UI/UX</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">E-Commerce<br>Redesign</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Figma, Adobe XD, Prototyping</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="proj3" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Duplicate Card 4 -->
+                <div class="swiper-slide">
+                    <article class="project-cards">
+                        <div class="blob"></div>
+                        <div class="project-number">
+                            <h1>04</h1>
+                            <h3>API</h3>
+                        </div>
+                        <div class="projects-data">
+                            <h1 class="proj-title">REST API<br>Service</h1>
+                            <p class="proj-sub">Technology Used</p>
+                            <p class="proj-details">Node.js, Express, MongoDB</p>
+                        </div>
+                        <div class="proj-img">
+                            <img src="/assets/logo bg.jpg" alt="proj4" class="projs-img">
+                            <a href="#" target="_blank" class="proj-btn"></a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Swiper pagination dots (hidden via CSS) -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Swiper navigation arrows (hidden via CSS) -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper carousel initialization -->
+    <script src="js/swiper.js"></script>
+
+</body>
+</html>

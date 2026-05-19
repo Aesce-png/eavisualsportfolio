@@ -1,0 +1,190 @@
+/* ============================================
+   PROJECTS SECTION & SWIPER CAROUSEL STYLES
+   ============================================ */
+
+:root {
+    --primary-color: #ffffff;
+    --bg-color: #000000;
+    --accent-color: rgb(156, 53, 53);
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+/* Section container */
+.projects {
+    background: linear-gradient(to left, #0a0a09, #0a0a09, #000000);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px;
+    position: relative;
+    overflow: visible;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ============================================
+   SWIPER CONTAINER
+   ============================================ */
+
+.mySwiper {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px 0 50px 0;
+    overflow: visible !important;
+}
+
+/* Linear timing for smooth continuous scroll */
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* ============================================
+   PROJECT CARDS
+   ============================================ */
+
+.project-cards {
+    position: relative;
+    background-color: var(--bg-color);
+    border-radius: 3rem;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    min-height: 600px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(228, 0, 0);
+    box-shadow: 0 0 0 1px var(--accent-color);
+    overflow: hidden;
+}
+
+/* Hover: lift + enhanced glow */
+.project-cards:hover {
+    transform: scale(1.02);
+    transform: translateY(-8px);
+    box-shadow: 0 0 40px rgb(156, 53, 53);
+}
+
+/* ============================================
+   PROJECT IMAGES
+   ============================================ */
+
+/* Blurred red orb behind image */
+.proj-img::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(
+        circle,
+        rgb(156, 53, 53) 0%,
+        rgb(102, 35, 35) 40%,
+        rgb(77, 25, 25) 70%,
+        transparent 100%
+    );
+    border-radius: 100%;
+    bottom: -150px;
+    right: -250px;
+    opacity: 1;
+    pointer-events: none;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.proj-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: visible;
+    padding: 2px;
+    bottom: -30px;
+    z-index: 1;
+}
+
+.projs-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   CARD TEXT CONTENT
+   ============================================ */
+
+/* Section header */
+.sec-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -5px;
+    margin-bottom: -20px;
+}
+
+.sec-titlesub {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(156, 53, 53);
+    padding-bottom: 50px;
+}
+
+/* Card number + category */
+.project-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.project-number h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+    z-index: 2;
+}
+
+.project-number h3 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+    z-index: 2;
+}
+
+/* Project title */
+.projects-data h1 {
+    padding: 10px;
+    margin: 0;
+    z-index: 2;
+}
+
+/* "Technology Used" label */
+.proj-sub {
+    padding: 3px;
+    color: rgb(156, 53, 53);
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Tech stack list */
+.proj-details {
+    padding: 3px;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    display: none !important;
+}

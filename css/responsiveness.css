@@ -1,0 +1,217 @@
+
+/* about */
+@media screen and (min-width: 1024px) {
+    .bgcolor {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .aboutm {
+        max-width: 800px;
+        padding-left: 90px;
+        margin-bottom: 120px;
+        align-items: flex-start;
+    }
+    
+    .abouth {
+        margin-bottom: 100px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+
+    .abouth h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        margin-bottom: 10px;
+        border-bottom: 3px solid var(--primary-color);
+        padding-bottom: 8px;
+        text-align: left;
+    }
+    
+
+    .abouth h4 {
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+        text-align: left;
+    }
+    
+    .aboutp {
+        max-width: 100%;
+        text-align: left;
+    }
+
+
+    .aboutp p {
+        font-size: clamp(0.85rem, 1.2vw, 1rem);
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .add {
+        position: absolute;
+        right: 63%;                   
+        left: auto;                   
+        bottom: 70px;
+        width: auto;
+        text-align: right;
+        opacity: 0.8;
+    }
+    
+    .address h2 {
+        justify-content: flex-end;    
+        flex-direction: row-reverse;  
+    }
+
+}
+
+/* Large Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+        /* nav */
+    .nav-links {
+        gap: 20px;
+    }
+
+    .phone-number {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablets & Mobile (max-width: 768px) */
+    /* nav */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.97);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        z-index: 999;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        max-height: 350px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 16px 0;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    /* home */
+    .socials {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 15px;
+    }
+
+    .socials a {
+        font-size: 1.8rem;
+    }
+
+    /* Center all hero content */
+    .homepage {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px 120px;   
+    }
+
+    .intro-content {
+        align-items: center;
+    }
+
+    .intro h3 {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* nav */
+    .socials a {
+        font-size: 1.5rem;
+    }
+
+    .bgimg {
+        background-position: center center;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h3 {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    /* Stack buttons vertically */
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+
+/* Small Mobile (max-width: 360px) */
+
+@media screen and (max-width: 360px) {
+    :root {
+        --nav-height: 55px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+section {
+    position: relative;
+}
+
+@media screen and (max-width: 320px) {
+        /* home */
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro h3 {
+        font-size: 0.65rem;
+    }
+}
